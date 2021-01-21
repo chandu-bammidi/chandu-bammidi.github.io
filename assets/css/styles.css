@@ -75,7 +75,37 @@ img{
   height: auto;
   display: block;
 }
-
+@media screen and (max-width: 768px)
+{
+	.nav__menu
+	{
+		position: fixed;
+		display: flex;
+		top: var(--header-height);
+		right: -100%;
+		width: 80%;
+		height: 100%;
+		padding: 2rem;
+		background-color: var(--second-color);
+		transition: 0.5s;
+	}
+  .home
+  {
+    box-sizing: border-box;
+    padding: auto;
+    margin: auto;
+    height: 50vh;
+    text-align: center;
+    max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100%-2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+    overflow: hidden;
+  }
+}
 /*===== CLASS CSS ===== */
 .section-title{
   position: relative;
@@ -216,7 +246,7 @@ img{
 	margin-bottom: var(--mb-5);
 }
 .home__title-color{
-  color: var(--first-color);
+  color:black;
 }
 .home__social{
   display: flex;
@@ -246,6 +276,7 @@ img{
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
+  margin-left:-4rem;
 }
 .button:hover{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
