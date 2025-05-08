@@ -28,6 +28,7 @@
   }
 }
 
+
 /*===== Margenes =====*/
 :root{
   --mb-1: 0.5rem;
@@ -44,6 +45,13 @@
   --z-normal: 1;
   --z-tooltip: 10;
   --z-fixed: 100;
+}
+
+@media (max-width: 480px) {
+  .button {
+      padding: 0.5rem 1.5rem;
+      font-size: 0.9rem;
+  }
 }
 
 /*===== BASE =====*/
@@ -271,17 +279,17 @@ img{
 }
 
 /*BUTTONS*/
-.button{
+.button {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: .75rem 2.5rem;
+  padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
-  border-radius: .5rem;
-  margin-left:-4.25rem;
+  border-radius: 0.5rem;
 }
-.button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+
+.button:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== ABOUT =====*/
@@ -529,6 +537,9 @@ img{
 }
 
 @media screen and (min-width: 1024px){
+  .button{
+    margin-left: -4.25rem;
+  }
   .bd-grid{
     margin-left: auto;
     margin-right: auto;
